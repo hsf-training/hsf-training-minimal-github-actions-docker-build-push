@@ -10,8 +10,10 @@ jobs:
   docker:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/checkout@v3
+      - name: Checkout this repository
+        uses: actions/checkout@v3
+      - name: Checkout the analysis repository
+        uses: actions/checkout@v3
         with:
           repository: hsf-training/hsf-training-cms-analysis-snapshot
           path: analysis/skim
