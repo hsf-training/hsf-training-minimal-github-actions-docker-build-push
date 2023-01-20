@@ -1,5 +1,5 @@
 # Start from the rootproject/root base image with conda
-FROM rootproject/root:6.22.06-conda
+FROM rootproject/root:6.26.10-conda
 
 # Put the current repo (the one in which this Dockerfile resides) in the /analysis/skim directory
 # Note that this directory is created on the fly and does not need to reside in the repo already
