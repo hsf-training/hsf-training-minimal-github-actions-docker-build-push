@@ -13,8 +13,7 @@ jobs:
       - name: actions/checkout@v3
       - name: actions/checkout@v3
         with:
-          repository: 
-hsf-training/hsf-training-cms-analysis-snapshot
+          repository: hsf-training/hsf-training-cms-analysis-snapshot
           path: analysis/skim
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v2
