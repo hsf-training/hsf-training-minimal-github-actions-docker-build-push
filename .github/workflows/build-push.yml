@@ -32,4 +32,4 @@ jobs:
         with:
           context: .
           push: ${{ steps.docker_login.outcome == 'success' && github.ref_name == 'main' }}
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/hsf-training-minimal-github-actions-docker-build-push:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME || 'hsf-training' }}/hsf-training-minimal-github-actions-docker-build-push:latest
